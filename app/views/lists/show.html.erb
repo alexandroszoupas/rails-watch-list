@@ -1,0 +1,8 @@
+<h1>Name: <%=@list.name%></h1>
+<% @list.bookmarks.each_with_index do |bookmark, index|%>
+<p><%= index + 1%>: <b>Text:</b> <%=bookmark.comment%></p>
+<% end %>
+<hr>
+
+<p><%= link_to 'Back to all lists', lists_path %></p>
+<p><%= link_to 'Add a bookmark for this list', new_list_bookmark_path(@list)%></p>

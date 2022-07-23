@@ -1,0 +1,3 @@
+<h1><%= @bookmark.comment%></h1>
+
+<%= link_to 'delete', bookmark(@bookmark), method: :delete, data: {confirm: 'Are you sure you want to delete this?'}%>

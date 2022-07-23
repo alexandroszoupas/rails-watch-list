@@ -1,0 +1,7 @@
+<h1> The lists are here</h1>
+
+<% @lists.each do |list| %>
+  <h2><%= link_to list.name, list_path(list)%></h2>
+<% end %>
+
+<p><%= link_to 'Create new list', new_list_path%></p>
