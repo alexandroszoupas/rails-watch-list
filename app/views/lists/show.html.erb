@@ -1,6 +1,16 @@
-<h1>Name: <%=@list.name%></h1>
-<% @list.bookmarks.each_with_index do |bookmark, index|%>
-<p><%= index + 1%>: <b>Text:</b> <%=bookmark.comment%></p>
+<h2>Movies in this list</h2>
+<div class="card" style="width: 18rem;">
+<img class="card-img-top" src="<%=@list.list_poster_url%>">
+<div class="card-body">
+<h5 class="card-title"><%=@list.name%></h5>
+
+<h2>Movies in this list</h2>
+<div class="card" style="width: 18rem;">
+<% @list.movies.each do |movie|%>
+<img class="card-img-top" src="<%=movie.poster_url%>">
+<div class="card-body">
+<h5 class="card-title"><%=movie.title%></h5>
+    <p class="card-text"><%=movie.overview%></p>
 <% end %>
 <hr>
 

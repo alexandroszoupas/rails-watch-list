@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2022_07_23_074135) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "list_poster_url"
   end
 
   create_table "movies", force: :cascade do |t|

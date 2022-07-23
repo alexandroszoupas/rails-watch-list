@@ -1,7 +1,15 @@
-<h1> The lists are here</h1>
 
-<% @lists.each do |list| %>
-  <h2><%= link_to list.name, list_path(list)%></h2>
+<%# <% @lists.each do |list| %>
+  <%# <h2><%= link_to list.name, list_path(list)%></h2>
+<%# <% end %>
+
+<div class="card" style="width: 18rem;">
+<% @lists.each do |list|%>
+<img class="card-img-top" src="<%=list.list_poster_url%>">
+<div class="card-body">
+<h5 class="card-title"><%=list.name%></h5>
 <% end %>
+<hr>
+
 
 <p><%= link_to 'Create new list', new_list_path%></p>
