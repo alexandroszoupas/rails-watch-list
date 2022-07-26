@@ -1,3 +1,5 @@
+
+
 class ListsController < ApplicationController
   before_action :set_list, only: [:show, :destroy]
 

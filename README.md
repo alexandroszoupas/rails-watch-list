@@ -1,3 +1,24 @@
-Solution of the two-day [Watch List challenge](https://github.com/lewagon/fullstack-challenges/blob/master/05-Rails/04-Rails-mister-cocktail/02-Watch-List/README.md).
+# README
 
-The branch `day-one` is the solution of the challenge at the end of the first day and the branch `day-two` is the complete solution of this two-day challenge.
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
